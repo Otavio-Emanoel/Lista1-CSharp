@@ -32,6 +32,10 @@ namespace Lista_1
             Exercicio2();
             Exercicio3();
             Exercicio4();
+            Exercicio5();
+            Exercicio6();
+            Exercicio7();
+            Console.WriteLine("\n\nMuito obrigado por executar este programa!");
         }
         public static void Exercicio1()
         {
@@ -89,12 +93,39 @@ namespace Lista_1
             idade = Convert.ToInt32(Console.ReadLine());
             if (idade >= 18)
             {
-                Console.WriteLine("voce é maior de idade");
+                Console.WriteLine("Você é maior de idade");
             }
             else
             {
-                Console.WriteLine("voce é menor de idade!");
+                Console.WriteLine("Você é menor de idade!");
             }
-        }    
+        }
+        public static void Exercicio6()
+        {
+            double valorReal, valorDolar;
+            Console.WriteLine("\nExercicio 6");
+            Console.WriteLine("\nDigite o valor em reais (R$) para calcular o valor em dolar");
+            valorReal = Convert.ToInt32(Console.ReadLine());
+            valorDolar = valorReal / 5.89;
+            Console.WriteLine($"\nAtualmente R${valorReal} equivale a USD {valorDolar}");
+        }
+        public static void Exercicio7()
+        {
+            string nome1, nome2;
+            Console.WriteLine("\nExercicio 7");
+            Console.WriteLine("\nDigite um nome");
+            nome1 = Console.ReadLine();
+            Console.WriteLine("\nDigite outro nome");
+            nome2 = Console.ReadLine();
+
+            Console.WriteLine($"\n{nome1.ToUpperInvariant}");
+            Console.WriteLine($"{nome2.ToUpperInvariant}");
+
+            Console.WriteLine($"\n{nome1} tem {nome1.Length}");
+            Console.WriteLine($"{nome2} tem {nome2.Length}");
+
+            Console.WriteLine($"\n{nome1} tem as 3 primeiras letras sendo: {nome1.Substring(0,3)}");
+            Console.WriteLine($"{nome2} tem as 3 primeiras letras sendo: {nome2.Substring(0, 3)}");
+        }
     }
 }
